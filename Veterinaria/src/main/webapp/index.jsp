@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<%@page import="web.Usuario"%>
+<%@page import="web.DaoUsuario"%>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sesion.css">
+    <title>Pet Center</title>
+     <style>
+        body {
+            background-image: url('img/fondo2.png');
+            background-size: 50%;
+        }
+
+    </style>
+    
+    
+       
+</head>
+<body>
+    <header>
+    	
+    	<a href="#" class="logo">
+   		<img alt="company logo" src="img/logo.png" class="logo-img">
+    	</a>
+    
+        <nav>      
+        	<a href="#" class="nav-link">Inicio</a>
+        	<a href="personal.jsp" class="nav-link">Especialidades</a>
+        	<a href="#" class="nav-link">Sedes</a>
+        	<a href="#" class="nav-link">Servicios</a>
+        	<a href="empresa.jsp" class="nav-link">Sobre la empresa</a>
+        	<a href="#" class="nav-link">Historial Clinico</a>	
+        	<button id="iniciarSesionButton">Iniciar Sesión</button>
+        	    
+        </nav>
+                
+    </header>
+    <div class="panel">
+    <div class="login-container">
+        <h2>Iniciar Sesión</h2>
+        <form action="operacion.jsp" method="post">
+            <input type="text" class="input-field" name="username" placeholder="Nombre de usuario" required autocomplete="off"> <br>
+            <input type="password" class="input-field" name="password" placeholder="Contraseña" required autocomplete="off"> <br>
+            <button type="submit" class="login-button">Ingresar</button>
+            <button id="Registrarse" type="submit" class="login-button">Registrarse</button>
+        </form>
+    </div>
+    </div>    
+        
+
+     <%
+    DaoUsuario daoUsuario = new DaoUsuario();
+    String operacion = request.getParameter("operacion");
+    if (operacion != null) {
+        if (operacion.equals("INSERT")) {
+            String username = request.getParameter("username");
+            String password = request.getParameter("password");
+            String apePat = request.getParameter("ape_pat");
+            String apeMat = request.getParameter("ape_mat");
+            String dni = request.getParameter("dni_usu");
+            String correo = request.getParameter("correo_usu");
+            String direccion = request.getParameter("direc_usu");
+            String telefono = request.getParameter("telef_usu");
+
+            // Crear un objeto Usuario y establecer los atributos
+            Usuario usuario = new Usuario();
+            usuario.setNom_usu(username);
+            usuario.setContra_usu(password);
+            usuario.setApe_pat(apePat);
+            usuario.setApe_mat(apeMat);
+            usuario.setDni_usu(dni);
+            usuario.setCorreo_usu(correo);
+            usuario.setDirec_usu(direccion);
+            usuario.setTelef_usu(telefono);            
+
+            // Guardar el usuario en la base de datos
+            daoUsuario.guardarUsuario(usuario);
+        }
+    }
+    
+%>
+     <script src="js/sesion.js"></script>
+</body>
+</html>

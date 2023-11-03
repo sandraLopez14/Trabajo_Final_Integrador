@@ -1,0 +1,266 @@
+/* Estilos para la página */
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f5f5f5;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 70px;
+    background-color: white;
+    padding: 15px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo img {
+    height: 50px;
+    margin-right: 15px;
+}
+
+nav {
+    padding: 15px;
+    display: flex;
+}
+
+nav a {
+    padding: 15px;
+    color: black;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: blue;
+}
+
+button {
+	
+	width: 160px;
+	height: px;
+	cursor: pointer;	
+    color: #fff;
+    font-size: 17px;
+    border-radius: 1rem;
+    border: none;
+    position: relative;
+    background: blue;
+    transition: 0.1s;
+}
+
+button:hover {
+    background-color: #87CEEB;
+}
+
+
+main{
+    text-align: left;
+}
+
+main img{
+	
+    max-height: 400px	; 
+}
+
+main .mensaje1 {
+    position: absolute; /* Posición absoluta para superponer el mensaje */
+    top: 15%; /* Posiciona el mensaje en el centro verticalmente */
+    left: 10%; /* Posiciona el mensaje en el centro horizontalmente */
+    color: black; /* Color del texto */
+    padding: 10px; /* Espaciado interno */
+    font-size: 50px;
+    font-family: "Comic Sans MS", cursive; /* Fuente Arial */
+    font-style: italic; /* Estilo cursiva */
+    font-weight: bold; /* Texto en negrita */
+}
+
+main .mensaje2 {
+    position: absolute;
+    top: 25%; /* Cambia la posición vertical según tus necesidades */
+    left: 55%; /* Cambia la posición horizontal según tus necesidades */
+    font-family: Arial, sans-serif; /* Cambia la fuente según tus necesidades */
+    font-size: 20px; /* Cambia el tamaño de fuente según tus necesidades */
+    color: black; /* Cambia el color según tus necesidades */
+}
+
+main .mensaje3 {
+    position: absolute;
+    top: 25%; /* Cambia la posición vertical según tus necesidades */
+    left: 77%; /* Cambia la posición horizontal según tus necesidades */
+    font-family: Arial, sans-serif; /* Cambia la fuente según tus necesidades */
+    font-size: 20px; /* Cambia el tamaño de fuente según tus necesidades */
+    color: black; /* Cambia el color según tus necesidades */
+}
+
+
+
+footer {
+    background-color: #6fb6e6;
+    color: #fff;
+    text-align: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 1rem;
+}
+
+.redes-sociales {
+    margin-bottom: 10px;
+    text-align: right; /* Alinea los iconos de redes sociales a la derecha */
+}
+
+.medios-pago {
+    text-align: left; /* Alinea los iconos de medios de pago a la izquierda */
+}
+
+/* Estilos para los iconos de redes sociales */
+.redes-sociales a img {
+    width: 40px; /* Establece el ancho deseado */
+    height: 40px; /* Establece la altura deseada */
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+.redes-sociales a img:hover {
+    transform: scale(1.2);
+}
+
+.medios-pago img {
+    width: 40px; /* Establece el ancho deseado */
+    height: 40px; /* Establece la altura deseada */
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+----- nuestra historia---
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: #007bff;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.evento {
+    width: 70%;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    text-align: left;
+    overflow: hidden; /* Limpiar el float */
+}
+
+.imagen-derecha, .imagen-izquierda {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.imagen-derecha {
+    float: right;
+    margin-left: 20px;
+    animation: slideInRight 1s ease-in-out;
+}
+
+.imagen-izquierda {
+    float: left;
+    margin-right: 20px;
+    animation: slideInLeft 1s ease-in-out;
+}
+
+.contenido {
+    overflow: hidden; /* Limpiar el float */
+}
+
+.evento h2 {
+    font-size: 30px;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.evento p {	
+    font-size: 18px;
+    color: #000000;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    text-align: justify; /* Justificar el texto */
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(50px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-50px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+@media (min-width: 600px) {
+    header {
+        flex-direction: row;
+        padding: 0px 30px;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

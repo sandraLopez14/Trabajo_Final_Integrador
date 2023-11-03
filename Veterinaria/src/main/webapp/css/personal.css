@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f5f5f5;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Estilos para los botones */
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    grid-gap: 10px; /* Espacio entre botones */
+    padding: 20px;
+    justify-content: center;
+}
+
+.button {
+	position: relative;
+	width: 350px; /* Ancho del botón */
+    height: 350px; /* Altura del botón */
+    overflow: hidden;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.button img {
+    width: 100%; /* Ancho de la imagen */
+    height: 100%; /* Altura de la imagen */
+    margin-bottom: 10px;
+    object-fit: cover;
+    transition: all 0.3s ease;	
+}
+
+.button div {
+    position: absolute;
+    top: 85%; /* Coloca el texto en el centro verticalmente */
+    left: 50%; /* Coloca el texto en el centro horizontalmente */
+    transform: translate(-50%, -50%); /* Centra el texto correctamente */
+    color: black; /* Color del texto */
+    background-color: rgba(128, 255, 255, 0.7); /* Fondo semi-transparente (azul con 70% de opacidad) */
+    padding: 10px 100px; /* Añade espacio alrededor del texto dentro del botón */
+    border: 2px solid #0056b3; /* Borde alrededor del texto */
+    border-radius: 5px; /* Borde redondeado */
+    font-size: 16px; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+}
+
+.button {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.button:hover {
+    transform: scale(1.1); /* Agrandar el botón al 110% del tamaño original */
+    background-color:#80ffff; /* Cambiar el color de fondo cuando se pasa el mouse */
+}
+
+/* Estilos para el encabezado */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 70px;
+    background-color: white;
+    padding: 15px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 15px;
+}
+
+nav {
+    padding: 15px;
+    display: flex;
+}
+
+nav a {
+    padding: 15px;
+    color: black;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: blue;
+}
+
+button {
+    width: 160px;
+    height: px;
+    cursor: pointer;	
+    color: #fff;
+    font-size: 17px;
+    border-radius: 1rem;
+    border: none;
+    position: relative;
+    background: blue;
+    transition: 0.1s;
+}
+
+button:hover {
+    background-color: #87CEEB;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #6fb6e6;
+    color: #fff;
+    text-align: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 1rem;
+}
+
+.redes-sociales {
+    margin-bottom: 10px;
+    text-align: right; /* Alinea los iconos de redes sociales a la derecha */
+}
+
+.medios-pago {
+    text-align: left; /* Alinea los iconos de medios de pago a la izquierda */
+}
+
+/* Estilos para los iconos de redes sociales */
+.redes-sociales a img,
+.medios-pago img {
+    width: 40px; /* Establece el ancho deseado */
+    height: 40px; /* Establece la altura deseada */
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: transform 0.3s;
+}
+
+.redes-sociales a img:hover,
+.medios-pago img:hover {
+    transform: scale(1.2);
+}
+
+@media (min-width: 600px) {
+    header {
+        flex-direction: row;
+        padding: 0px 30px;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
