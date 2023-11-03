@@ -23,20 +23,20 @@
     
         <nav>       
         	<a href="../sesion.html" class="nav-link">Inicio</a>
-        	<a href="../personal.jsp" class="nav-link">Especialidades</a>
+        	<a href="../personal.jsp" class="nav-link">Informaci√≥n_Especialidades</a>
         	<a href="#" class="nav-link">Sedes</a>
         	<a href="#" class="nav-link">Servicios</a>
         	<a href="../empresa.jsp" class="nav-link">Sobre la empresa</a>
         	<a href="#" class="nav-link">Historial Clinico</a>	
-        	<button id="iniciarSesionButton">Iniciar SesiÛn</button>
+        	<button id="iniciarSesionButton">Iniciar Sesi√≥n</button>
         	    
         </nav>
                 
     </header>
     
     <div class="imagen-arriba">
-    	<img src="../img/banner11.png" alt="DescripciÛn de la imagen">
-    	 	<p>La fisioterapia veterinaria es una disciplina que se enfoca en reforzar y mantener la forma fÌsica de los animales, prevenir las lesiones o restaurar el movimiento tras estas, contribuyendo a mejorar el bienestar del animal. A˙na conocimientos de biomec·nica, anatomÌa, fisiologÌa, fÌsica y psicologÌa para aliviar las disfunciones, lesiones, dolor o anomalÌas que puedan presentar los animales y potenciar la m·xima funcionalidad posible.</p>    	
+    	<img src="../img/banner11.png" alt="Descripci√≥n de la imagen">
+    	 	<p>La fisioterapia veterinaria es una disciplina que se enfoca en reforzar y mantener la forma f√≠sica de los animales, prevenir las lesiones o restaurar el movimiento tras estas, contribuyendo a mejorar el bienestar del animal. A√∫na conocimientos de biomec√°nica, anatom√≠a, fisiolog√≠a, f√≠sica y psicolog√≠a para aliviar las disfunciones, lesiones, dolor o anomal√≠as que puedan presentar los animales y potenciar la m√°xima funcionalidad posible.</p>    	
 	</div>
 	<h2>Personal:</h2>
      
